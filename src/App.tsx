@@ -5,7 +5,7 @@ import Experience from "./components/Experience"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import ThemeToggle from "./components/ThemeToggle"
-import GithubContributions from "./components/Githubcontributions "
+// import GithubContributions from "./components/Githubcontributions "
 
 export default function App() {
   const [mounted, setMounted] = useState(false)
@@ -39,7 +39,7 @@ export default function App() {
         <Experience />
         <Projects />
         <Contact />
-        <GithubContributions />
+        {/* <GithubContributions /> */}
       </div>
     </>
   )
