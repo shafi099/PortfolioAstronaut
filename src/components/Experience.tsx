@@ -132,7 +132,7 @@ export default function Experience() {
                                     {/* timeline dot */}
                                     <div className="hidden sm:flex absolute left-0 top-5 w-[46px] justify-center">
                                         <span className={`w-3 h-3 rounded-full shadow-lg ${c.dot} ${exp.status === "current" ? "ring-2 ring-offset-2 dark:ring-offset-gray-950" : ""}`}
-                                            style={exp.status === "current" ? { ringColor: "currentColor" } : {}}
+                                        // style={exp.status === "current" ? ({ ringColor: "currentColor" } as any) : {}}
                                         >
                                             {exp.status === "current" && (
                                                 <span className={`absolute inset-0 rounded-full animate-ping opacity-60 ${c.dot}`} />
