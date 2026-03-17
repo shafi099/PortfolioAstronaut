@@ -125,11 +125,11 @@ function ProjectCard({ p, featured }: { p: Project; featured?: boolean }) {
         <motion.div
             variants={cardVariants}
             layout
-            onHoverStart={() => setHovered(true)}
-            onHoverEnd={() => setHovered(false)}
+            // onHoverStart={() => setHovered(true)}
+            // onHoverEnd={() => setHovered(false)}
             className={`
                     group relative flex flex-col rounded-2xl 
-                    border ${c.cardBorder} bg-gray-50 dark:bg-white/[0.02]
+                    border ${c.cardBorder} bg-gray-50 dark:bg-white/[0.07]
                     ${c.cardHover} ${c.glow}
                     transition-all duration-300 overflow-hidden
                     hover:shadow-xl
@@ -149,11 +149,11 @@ function ProjectCard({ p, featured }: { p: Project; featured?: boolean }) {
                         <DomainIcon domain={p.domain} className="w-5 h-5" />
                     </span>
                     <div className="flex items-center gap-2">
-                        {featured && (
+                        {/* {featured && (
                             <span className="text-[10px] font-mono font-medium px-2 py-0.5 rounded-full bg-white/5 text-gray-500 border border-white/5 tracking-wider uppercase">
                                 Featured
                             </span>
-                        )}
+                        )} */}
                         <span className={`text-xs font-medium px-2.5 py-0.5 rounded-full border ${c.badge}`}>
                             {p.domain}
                         </span>

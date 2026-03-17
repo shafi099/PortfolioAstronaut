@@ -76,6 +76,23 @@ const projects: Project[] = [
         ],
     },
     {
+        id: "lnqurl",
+        title: "Lnq",
+        subtitle: "URL shortner application",
+        desc: "A fast URL shortener that converts long links into compact, shareable URLs with basic analytics. Built using a modern full-stack setup for smooth redirection and easy link management.",
+        domain: "Productivity",
+        domainColor: "green",
+        stack: ["React", "Node.js", "MongoDB", "TypeScript", "TailwindCSS"],
+        bullets: [
+            "Built a fast and reliable URL shortening system with unique link generation and instant redirection.",
+            "Implemented click tracking and analytics to monitor link performance and user engagement.",
+            "Designed a responsive and user-friendly interface for creating, managing, and sharing short URLs.",
+        ],
+        links: [
+            { label: "Live", href: "https://lnq.up.railway.app/", icon: "external" },
+        ],
+    },
+    {
         id: "wordsprint",
         title: "Word Sprint",
         subtitle: "Typing Practice Application",
