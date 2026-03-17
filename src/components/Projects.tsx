@@ -119,7 +119,7 @@ const DomainIcon = ({ domain, className }: { domain: Project["domain"]; classNam
 /* ── project card ───────────────────────────────────────── */
 function ProjectCard({ p, featured }: { p: Project; featured?: boolean }) {
     const c = colors[p.domainColor]
-    const [hovered, setHovered] = useState(false)
+    // const [hovered, setHovered] = useState(false)
 
     return (
         <motion.div
@@ -174,7 +174,8 @@ function ProjectCard({ p, featured }: { p: Project; featured?: boolean }) {
 
                 {/* bullets — revealed on hover */}
                 <AnimatePresence>
-                    {hovered && (
+                    {/* {hovered && ( */}
+                    {false && (
                         <motion.ul
                             initial={{ height: 0, opacity: 0 }}
                             animate={{ height: "auto", opacity: 1 }}
